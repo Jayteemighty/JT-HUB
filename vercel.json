@@ -1,0 +1,9 @@
+{
+    "builds": [
+      { "src": "puddle/wsgi.py", "use": "@vercel/python" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "puddle/wsgi.py" }
+    ]
+  }
+  
